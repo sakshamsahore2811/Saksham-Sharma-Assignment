@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidyo.ai</title>
+  </head>
+  <body>
+    <div class="navbar center">
+      <img alt="logo" src="./nu0ZY0ft9dWw.png" height="25" width="75" />
+    </div>
+    <div class="content">
+      <div class="header">
+        <div class="heading">Save 10x time & effort with us</div>
+        <div class="subheading">
+          Pay only for upload minutes. Download unlimited videos.
+        </div>
+      </div>
+      <div class="toggle">
+        <button id="monthlyButton" class="selected"> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp;Monthly &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</button>
+        <button id="yearlyButton"><div class="flex"><div>Yearly</div> <div class="off">Upto 51% off</div></div></button>
+      </div>
+      <div class="toggle"></div>
+      <div class="flexclose2">
+        <div class="text">
+            Suggesting an ideal plan for <br />
+            producing around <span class="purple"><span id="sliderValue">50</span> clips</span> monthly
+        </div>
+        <div class="flex">
+            <div>50</div>
+            <div class="slider-container">
+                <input title="input" type="range" min="50" max="200" value="50" class="slider" id="myRange">
+                <div class="slider-tooltip" id="sliderTooltip">50 clips</div> <!-- Added tooltip -->
+            </div>
+            <div class="slidernumber">200+</div>
+        </div>
+    </div>
+    
+      <div class="cards">
+        <div class="card">
+          <div class="free">
+            <b>Free</b>
+            <div class="price flexclose">
+              <div><b>USD 0</b></div>
+              <div class="subheading">/month</div>
+            </div>
+          </div>
+          <div class="btn">Start for free</div>
+          <div class="line"></div>
+          <div class="properties">
+            <div class="property">&check; 75 mins per month</div>
+            <div class="property">&check; 720p render quality</div>
+            <div class="property">&check; Multi-Lingual Feature</div>
+            <div class="property">&check; Cut Magic</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="free">
+            <b>Essential</b>
+            <div class="price flexclose">
+              <div><b>USD 42</b></div>
+              <div class="subheading">/month</div>
+            </div>
+          </div>
+          <div class="billed">
+            Billed annually at <b> 22% off</b>
+          </div>
+          <div class="btn3">Choose this plan ></div>
+          <div class="line"></div>
+          <div class="properties">
+            <div class="property">&check; Everything in free plan</div>
+            <div class="property">&check; 200-500 mins per month</div>
+            <div class="property">&check; 1080p render quality</div>
+            <div class="property">&check; Import with integrations(Drive,Dropbox,Box)</div>
+            <div class="property">&check; Intelliclips</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="free">
+            <b>Growth</b>
+            <div class="price flexclose">
+              <div><b>USD 68</b></div>
+              <div class="subheading">/month</div>
+            </div>
+          </div>
+          <div class="billed">
+            Billed annually at <b> 35% off</b>
+          </div>
+          <div class="btn4">Choose this plan ></div>
+          <div class="line"></div>
+          <div class="properties">
+            <div class="property">&check; Everything in essential plan</div>
+            <div class="property">&check; 200-1000 mins per month</div>
+            <div class="property">&check; 1080p render quality</div>
+            <div class="property">&check; Bulk export (upto 5)</div>
+            <div class="property">&check; Bulk multi-social publishing </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="free">
+            <b>Custom</b>
+            <div class="price flexclose">
+              <div><b>USD <span id="selectedValue">6975</span></b></div>
+              <div class="subheading">/month</div>
+            </div>
+            <div class="billed2">
+                Billed annually at <b> 42% off</b>
+              </div>
+           
+          </div>
+          <div class="btn5">Choose this plan ></div>
+          <div class="line"></div>
+          <div class="minutes">Select minutes</div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">
+              <span id="selectedValue">1800 mins</span>
+            </button>
+            <div class="dropdown-content">
+              <button onclick="selectValue('3488')">900 mins</button>
+              <button onclick="selectValue('4651')">1200 mins</button>
+              <button onclick="selectValue('5813')">1500 mins</button>
+              <button onclick="selectValue('6975')">1800 mins</button>
+            </div>
+          </div>
+          <div class="properties">
+            <div class="property">&check; Everything in Growth plan</div>
+            <div class="property">&check; 400-1000 mins per month</div>
+            <div class="property">&check; 4k render quality</div>
+            <div class="property">&check; Bulk export</div>
+            <div class="property">&check; Multiple brand kits</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn2">View all features &darr;</div>
+      <div class="tbl">
+        <table>
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>Free</th>
+              <th>Essential</th>
+              <th>Growth</th>
+              <th>Custom</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Feature 1</td>
+              <td>Short value 1</td>
+              <td>Short value 2</td>
+              <td>Short value 3</td>
+              <td>Short value 4</td>
+            </tr>
+            <tr>
+              <td>Feature 2</td>
+              <td>Short value 5</td>
+              <td>Short value 6</td>
+              <td>Short value 7</td>
+              <td>Short value 8</td>
+            </tr>
+            <tr>
+              <td>Feature 3</td>
+              <td>Short value 9</td>
+              <td>Short value 10</td>
+              <td>Short value 11</td>
+              <td>Short value 12</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

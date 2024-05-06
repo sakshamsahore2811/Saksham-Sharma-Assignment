@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.center{
+    text-align: center;
+}
+
+.content{
+    background-color:rgb(248, 243, 243);
+    font-family: "Poppins";
+}
+.header{
+    padding: 20px;
+    text-align:center;
+}
+
+.heading{
+    color: rgb(65, 63, 63);
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+.subheading{
+    color: gray;
+    font-size: small;
+}
+.flexclose{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.flexclose2{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.flex {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.flex > .flex {
+    margin-left: 20px; /* Add margin between the two flex containers */
+}
+
+
+.text{
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; 
+}
+
+.card{
+    flex: 1; /* Take equal space */
+    min-width: 200px; /* Minimum width for each item */
+    background-color: white;
+    height: 500px;
+box-sizing: border-box;
+margin: 20px;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px;
+gap: 8px;
+border: 1px solid #D8D8D0;
+border-radius: 8px;
+padding-bottom: 150px;
+}
+
+.btn{
+    background-color: #efefe8;
+    color:rgb(139, 132, 132);
+    text-align: center;
+    margin:20px;
+    margin-top: 60px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+
+}
+
+.btn2{
+    text-align: center;
+    border: 1px solid #c4c4ba;
+    padding: 10px;
+    margin:10px;
+}
+.free{
+    font-size:small;
+    padding-left: 20px;
+}
+.price{
+    font-size: large;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.btn3{
+    background-color: #efefe8;
+    color:black;
+    margin:20px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+}
+.btn4{
+    background-color: #efefe8;
+    color:black;
+    margin:20px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+}
+.btn5{
+    background-color: #efefe8;
+    color:black;
+    margin:20px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+}
+.properties{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 80px;
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Add border */
+    padding: 8px; /* Add padding */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.slider-container {
+    position: relative; /* Position the tooltip relative to the container */
+    margin: 50px auto;
+    text-align: center;
+    width: 100%; /* Adjusted width for the slider container */ /* Maximum width for the slider container */
+}
+.slidernumber{
+    padding-left: 600px;
+}
+.slider {
+    width: 550%; /* Set the slider width to 100% */
+}
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+}
+.slider-tooltip {
+    position: absolute; /* Position the tooltip absolutely */
+    top: -30px; /* Adjust the position above the slider */
+    left: 50%; /* Center the tooltip horizontally */
+    transform: translateX(-50%); /* Adjust horizontal positioning */
+    background-color: #000000; /* Tooltip background color */
+    color: white; /* Tooltip text color */
+    padding: 4px 8px; /* Adjust padding */
+    border-radius: 4px; /* Rounded corners */
+    font-size: small; /* Adjust font size */
+    opacity: 0; /* Hide the tooltip by default */
+    pointer-events: none; /* Ensure the tooltip doesn't interfere with slider interaction */
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.slider:hover + .slider-tooltip {
+    opacity: 1; /* Show the tooltip on hover */
+}
+
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Added margin for better spacing */
+}
+
+.toggle button {
+    padding: 8px 16px; /* Adjusted button padding */
+    background-color: #ccc;
+    color: #666;
+    border-radius: 25px; /* Rounder corners for toggle button */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle button.selected {
+    background-color: white;
+    color: black;
+}
+
+
+.purple{
+    color: #bd1ebd;
+}
+.billed{
+    font-size: small;
+    padding: 10px;
+    padding-left: 18px;
+}
+.billed2{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.off{
+    font-size:x-small;
+    background-color: greenyellow;
+    padding: 4px;
+    border-radius: 8px;
+}
+.line {
+    height: 1px;
+    background-color: rgb(88, 88, 88);
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px; /* Added padding */
+}
+.minutes{
+    font-size: small;
+    padding-left: 20px;
+}
