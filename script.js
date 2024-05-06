@@ -1,9 +1,3 @@
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-}
-
-
 
 
 const slider = document.getElementById("myRange");
@@ -21,7 +15,7 @@ slider.oninput = function() {
     thirdCard.style.backgroundColor="black";
     thirdCard.style.color = "white";
     btn4.style.backgroundColor = "#bd1ebd";
-    if (this.value < 150) {
+    if (this.value < 120) {
         thirdCard.style.backgroundColor = "black";
         thirdCard.style.color = "white";
         fourthCard.style.backgroundColor = "white"; // Reset background color of the fourth card
@@ -44,6 +38,8 @@ slider.oninput = function() {
         drpdwn.style.backgroundColor ="black"; 
     }
 }
+
+
 
 
 
