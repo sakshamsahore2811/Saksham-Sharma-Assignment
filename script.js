@@ -3,19 +3,16 @@ function toggleDropdown() {
     dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
 }
 
-function selectValue(value) {
-    document.getElementById("selectedValue").innerText = value;
-    toggleDropdown(); // Close the dropdown after selection
-}
 
 
 
 const slider = document.getElementById("myRange");
 const output = document.getElementById("sliderValue");
-const thirdCard = document.querySelector(".cards .card:nth-child(3)");
+const thirdCard = document.querySelector(".cards .card-black-default");
 const fourthCard = document.querySelector(".cards .card:nth-child(4)");
 const btn4  = document.querySelector(".btn4");
 const btn5  = document.querySelector(".btn5");
+const drpdwn = document.querySelector(".dropdown-content");
 
 output.innerHTML = slider.value;
 
@@ -33,6 +30,8 @@ slider.oninput = function() {
         btn4.style.color = "white";
         btn5.style.color = "black";
         btn5.style.backgroundColor = "#e1e1d8";
+        drpdwn.style.backgroundColor ="white"; 
+
     } else {
         thirdCard.style.backgroundColor = "white"; // Reset background color of the third card
         fourthCard.style.color = "white";
@@ -42,9 +41,46 @@ slider.oninput = function() {
         btn4.style.backgroundColor = "#e1e1d8";
         btn5.style.color = "white";
         btn4.style.color = "black";
+        drpdwn.style.backgroundColor ="black"; 
     }
 }
 
+
+
+
+const viewAllBtn = document.querySelector(".btn2");
+const table = document.querySelector(".tbl");
+
+viewAllBtn.addEventListener("click", function() {
+    if (table.style.display === "none" || table.style.display === "") {
+        table.style.display = "block"; // Show the table
+    } else {
+        table.style.display = "none"; // Hide the table
+    }
+});
+
+
+
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+}
+
+function selectValue(value) {
+    document.getElementById("selectedValue").textContent = value;
+    if (value=='3488'){
+    document.getElementById("dropdownValue").textContent = '900';
+    }
+    else if (value=='4651'){
+        document.getElementById("dropdownValue").textContent = '1200';
+    }
+    else if (value=='5813'){
+        document.getElementById("dropdownValue").textContent = '1500';
+    }
+    else if (value=='6975'){
+        document.getElementById("dropdownValue").textContent = '1800';
+    }
+}
 
 
 

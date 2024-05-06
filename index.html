@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./style.css" />
-   
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vidyo.ai</title>
@@ -19,25 +19,43 @@
         </div>
       </div>
       <div class="toggle">
-        <button id="monthlyButton" class="selected"> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp;Monthly &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</button>
-        <button id="yearlyButton"><div class="flex"><div>Yearly</div> <div class="off">Upto 51% off</div></div></button>
+        <button id="monthlyButton" class="selected">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Monthly &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        </button>
+        <button id="yearlyButton">
+          <div class="flex">
+            <div>Yearly</div>
+            <div class="off">Upto 51% off</div>
+          </div>
+        </button>
       </div>
-      <div class="toggle"></div>
       <div class="flexclose2">
         <div class="text">
-            Suggesting an ideal plan for <br />
-            producing around <span class="purple"><span id="sliderValue">50</span> clips</span> monthly
+          Suggesting an ideal plan for <br />
+          producing around
+          <span class="purple"><span id="sliderValue">50</span> clips</span>
+          monthly
         </div>
         <div class="flex">
-            <div>50</div>
-            <div class="slider-container">
-                <input title="input" type="range" min="50" max="200" value="50" class="slider" id="myRange">
-                <div class="slider-tooltip" id="sliderTooltip">50 clips</div> <!-- Added tooltip -->
-            </div>
-            <div class="slidernumber">200+</div>
+          <div>50</div>
+          <div class="slider-container">
+            <input
+              title="input"
+              type="range"
+              min="50"
+              max="200"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
+            <div class="slider-tooltip" id="sliderTooltip">clips</div>
+          </div>
+
+          <div>200+</div>
         </div>
-    </div>
-    
+      </div>
+
       <div class="cards">
         <div class="card">
           <div class="free">
@@ -64,20 +82,20 @@
               <div class="subheading">/month</div>
             </div>
           </div>
-          <div class="billed">
-            Billed annually at <b> 22% off</b>
-          </div>
+          <div class="billed">Billed annually at <b> 22% off</b></div>
           <div class="btn3">Choose this plan ></div>
           <div class="line"></div>
           <div class="properties">
             <div class="property">&check; Everything in free plan</div>
             <div class="property">&check; 200-500 mins per month</div>
             <div class="property">&check; 1080p render quality</div>
-            <div class="property">&check; Import with integrations(Drive,Dropbox,Box)</div>
+            <div class="property">
+              &check; Import with integrations(Drive,Dropbox,Box)
+            </div>
             <div class="property">&check; Intelliclips</div>
           </div>
         </div>
-        <div class="card">
+        <div class="card-black-default">
           <div class="free">
             <b>Growth</b>
             <div class="price flexclose">
@@ -85,9 +103,7 @@
               <div class="subheading">/month</div>
             </div>
           </div>
-          <div class="billed">
-            Billed annually at <b> 35% off</b>
-          </div>
+          <div class="billed">Billed annually at <b> 35% off</b></div>
           <div class="btn4">Choose this plan ></div>
           <div class="line"></div>
           <div class="properties">
@@ -95,35 +111,37 @@
             <div class="property">&check; 200-1000 mins per month</div>
             <div class="property">&check; 1080p render quality</div>
             <div class="property">&check; Bulk export (upto 5)</div>
-            <div class="property">&check; Bulk multi-social publishing </div>
+            <div class="property">&check; Bulk multi-social publishing</div>
           </div>
         </div>
         <div class="card">
           <div class="free">
             <b>Custom</b>
             <div class="price flexclose">
-              <div><b>USD <span id="selectedValue">6975</span></b></div>
+              <div>
+                <b>USD <span id="selectedValue">6975</span></b>
+              </div>
               <div class="subheading">/month</div>
             </div>
-            <div class="billed2">
-                Billed annually at <b> 42% off</b>
-              </div>
-           
+            <div class="billed2">Billed annually at <b> 42% off</b></div>
           </div>
           <div class="btn5">Choose this plan ></div>
           <div class="line"></div>
           <div class="minutes">Select minutes</div>
-          <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown()">
-              <span id="selectedValue">1800 mins</span>
-            </button>
-            <div class="dropdown-content">
-              <button onclick="selectValue('3488')">900 mins</button>
-              <button onclick="selectValue('4651')">1200 mins</button>
-              <button onclick="selectValue('5813')">1500 mins</button>
-              <button onclick="selectValue('6975')">1800 mins</button>
-            </div>
+          <div class="dropdown" id="dropdown">
+              <button class="dropbtn" onclick="toggleDropdown()">
+                  <span id="dropdownValue">1800</span> mins
+              </button>
+              <div class="dropdown-content" id="dropdownContent">
+                  <button onclick="selectValue('3488')">900 mins</button>
+                  <button onclick="selectValue('4651')">1200 mins</button>
+                  <button onclick="selectValue('5813')">1500 mins</button>
+                  <button onclick="selectValue('6975')">1800 mins</button>
+              </div>
           </div>
+          
+
+
           <div class="properties">
             <div class="property">&check; Everything in Growth plan</div>
             <div class="property">&check; 400-1000 mins per month</div>
@@ -148,24 +166,24 @@
           <tbody>
             <tr>
               <td>Feature 1</td>
-              <td>Short value 1</td>
-              <td>Short value 2</td>
-              <td>Short value 3</td>
-              <td>Short value 4</td>
+              <td>value 1</td>
+              <td>value 2</td>
+              <td>value 3</td>
+              <td>value 4</td>
             </tr>
             <tr>
               <td>Feature 2</td>
-              <td>Short value 5</td>
-              <td>Short value 6</td>
-              <td>Short value 7</td>
-              <td>Short value 8</td>
+              <td>value 5</td>
+              <td>value 6</td>
+              <td>value 7</td>
+              <td>value 8</td>
             </tr>
             <tr>
               <td>Feature 3</td>
-              <td>Short value 9</td>
-              <td>Short value 10</td>
-              <td>Short value 11</td>
-              <td>Short value 12</td>
+              <td>value 9</td>
+              <td>value 10</td>
+              <td>value 11</td>
+              <td>value 12</td>
             </tr>
             <!-- Add more rows as needed -->
           </tbody>
@@ -173,5 +191,5 @@
       </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
