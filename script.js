@@ -18,7 +18,7 @@ slider.oninput = function() {
     if (this.value < 120) {
         thirdCard.style.backgroundColor = "black";
         thirdCard.style.color = "white";
-        fourthCard.style.backgroundColor = "white"; // Reset background color of the fourth card
+        fourthCard.style.backgroundColor = "white"; 
         fourthCard.style.color = "black";
         btn4.style.backgroundColor = "#bd1ebd";
         btn4.style.color = "white";
@@ -27,7 +27,7 @@ slider.oninput = function() {
         drpdwn.style.backgroundColor ="white"; 
 
     } else {
-        thirdCard.style.backgroundColor = "white"; // Reset background color of the third card
+        thirdCard.style.backgroundColor = "white"; 
         fourthCard.style.color = "white";
         fourthCard.style.backgroundColor = "black";
         btn5.style.backgroundColor = "#bd1ebd";
@@ -49,9 +49,9 @@ const table = document.querySelector(".tbl");
 
 viewAllBtn.addEventListener("click", function() {
     if (table.style.display === "none" || table.style.display === "") {
-        table.style.display = "block"; // Show the table
+        table.style.display = "block"; 
     } else {
-        table.style.display = "none"; // Hide the table
+        table.style.display = "none";
     }
 });
 
