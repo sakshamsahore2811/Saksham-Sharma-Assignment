@@ -234,7 +234,7 @@ th {
 
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 180%;
     height: 10px;
     background: black;
     outline: none;
@@ -264,7 +264,7 @@ th {
 
 
 .slidernumber{
-    padding-left: 600px;
+    padding-left: 110px;
 }
 
 @media screen and (max-width: 600px) {
@@ -274,24 +274,23 @@ th {
     }
 }
 .slider-tooltip {
-    position: absolute; /* Position the tooltip absolutely */
-    top: -30px; /* Adjust the position above the slider */
-    left: 50%; /* Center the tooltip horizontally */
-    transform: translateX(-50%); /* Adjust horizontal positioning */
-    background-color: #000000; /* Tooltip background color */
-    color: white; /* Tooltip text color */
-    padding: 4px 8px; /* Adjust padding */
-    border-radius: 4px; /* Rounded corners */
-    font-size: small; /* Adjust font size */
-    opacity: 0; /* Hide the tooltip by default */
-    pointer-events: none; /* Ensure the tooltip doesn't interfere with slider interaction */
-    transition: opacity 0.3s ease; /* Add transition effect */
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: small;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
-.slider:hover + .slider-tooltip {
-    opacity: 1; /* Show the tooltip on hover */
+.slider-container:hover .slider-tooltip {
+    opacity: 1;
 }
-
 
 .toggle {
     display: flex;
