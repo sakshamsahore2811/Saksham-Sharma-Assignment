@@ -234,7 +234,7 @@ th {
 
 .slider {
     -webkit-appearance: none;
-    width: 180%;
+    width: 350%;
     height: 10px;
     background: black;
     outline: none;
@@ -264,7 +264,7 @@ th {
 
 
 .slidernumber{
-    padding-left: 110px;
+    padding-left: 330px;
 }
 
 @media screen and (max-width: 600px) {
@@ -288,9 +288,6 @@ th {
     transition: opacity 0.3s ease;
 }
 
-.slider-container:hover .slider-tooltip {
-    opacity: 1;
-}
 
 .toggle {
     display: flex;
